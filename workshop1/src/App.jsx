@@ -1,6 +1,7 @@
 import "./App.css";
 import { Footer } from "./Components/Footer";
 import Greetings from "./Components/greetings";
+import Css from "./Components/Css";
 export const Navbar = () => {
   return (
     <nav className="navbar">
@@ -36,6 +37,7 @@ function App() {
       <Navbar />
       <Greetings name="My App" isLoggedIn={false} />
       <Greetings name="Fast App" isLoggedIn={true} />
+      <Css />
       <Footer />
     </>
   );
