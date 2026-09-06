@@ -82,3 +82,23 @@ button:hover {
   visibility: visible;
   opacity: 1;
 }
+footer {
+  background: gray;
+}
+
+.top {
+  display: flex;
+  gap: 20%;
+  margin: 10% 0 5% 5%;
+  color: black;
+}
+
+li {
+  list-style: none;
+}
+
+.lists {
+  display: flex;
+  margin-top: 5%;
+  justify-content: space-around;
+}

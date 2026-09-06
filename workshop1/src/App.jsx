@@ -1,4 +1,5 @@
 import "./App.css";
+import { Footer } from "./Components/Footer";
 
 export const Navbar = () => {
   return (
@@ -33,6 +34,7 @@ function App() {
   return (
     <>
       <Navbar />
+      <Footer />
     </>
   );
 }
