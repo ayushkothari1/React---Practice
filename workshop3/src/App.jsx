@@ -38,7 +38,6 @@ export default function App() {
       author: "Daniel Reed",
       genre: "Science Fiction",
       rating: 4.5,
-      wjo,
     },
     {
       id: 103,
