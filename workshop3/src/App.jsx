@@ -1,4 +1,5 @@
 import "./App.css";
+import { useState } from "react";
 
 export function Book({ title, author, genre, rating }) {
   return (
@@ -24,6 +25,7 @@ export function TipsOfReading({ icon, heading, text }) {
 }
 
 export default function App() {
+  const [isVisible, setIsVisible] = useState(false);
   const books = [
     {
       id: 101,
@@ -47,6 +49,9 @@ export default function App() {
       rating: 4.8,
     },
   ];
+  const handleToggleVisibility = () => {
+    setIsVisible(!isVisible);
+  };
 
   return (
     <main className="library">
@@ -65,6 +70,12 @@ export default function App() {
             rating={book.rating}
           />
         ))}
+      </div>
+      <div id="toggle-container">
+        <button onClick={handleToggleVisibility} id="toggle-button">
+          {isVisible ? "Hide Message" : "Show Message"}
+        </button>
+        {isVisible && <p id="message">I love Coding!</p>}
       </div>
 
       <div className="tips">
