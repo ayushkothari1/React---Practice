@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #111827;
+}
+
+.picker {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.card-box {
+  width: 850px;
+  min-height: 500px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.colorEl {
+  min-height: 500px;
+}
+
+.content {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.head {
+  margin: 0 0 10px;
+  color: #777;
+  font-size: 12px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 40px;
+  color: #222;
+}
+
+.para {
+  margin: 15px 0 25px;
+  color: #666;
+  line-height: 1.5;
+}
+
+.colorValue {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: fit-content;
+  padding: 10px 15px;
+  margin-bottom: 25px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  color: #444;
+  font-family: monospace;
+}
+
+.color-dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+}
+
+label {
+  margin-bottom: 8px;
+  color: #444;
+  font-size: 14px;
+}
+
+input[type="color"] {
+  width: 100%;
+  height: 50px;
+  padding: 3px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  .card-box {
+    grid-template-columns: 1fr;
+  }
+
+  .colorEl {
+    min-height: 200px;
+  }
+
+  .content {
+    padding: 25px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+}
