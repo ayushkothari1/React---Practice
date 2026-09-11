@@ -48,6 +48,13 @@ export default function App() {
       genre: "Fantasy ",
       rating: 4.8,
     },
+    {
+      id: 104,
+      title: "Ramcharitmanas",
+      author: "Tulsidas",
+      genre: "Religious ",
+      rating: 4.8,
+    },
   ];
   const handleToggleVisibility = () => {
     setIsVisible(!isVisible);
