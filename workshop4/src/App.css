@@ -7,7 +7,7 @@ html {
 }
 
 #color-picker-container {
-  height: 100vh;
+  height: 70vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,4 +19,12 @@ input[type="color"] {
   position: absolute;
   margin-top: 50px;
   height: 40px;
+}
+
+button {
+  margin-top: 6%;
+  font-size: 25px;
+  padding: 10px 12px;
+  cursor: pointer;
+  border-radius: 8px;
 }
