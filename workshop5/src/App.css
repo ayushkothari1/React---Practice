@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  background-color: #f2f2f2;
+
+  font-family: Arial, sans-serif;
+}
+
+/* Calculator */
+
+.Calculator {
+  width: 350px;
+
+  margin: 50px auto;
+
+  padding: 20px;
+
+  background-color: #222;
+
+  border-radius: 15px;
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Input */
+
+.display {
+  width: 100%;
+  height: 70px;
+
+  margin-bottom: 15px;
+  padding: 10px 15px;
+
+  border: none;
+  border-radius: 10px;
+
+  background-color: #111;
+
+  color: white;
+
+  font-size: 30px;
+
+  text-align: right;
+
+  outline: none;
+}
+
+/* Button row */
+
+.box {
+  display: flex;
+
+  gap: 10px;
+
+  margin-bottom: 10px;
+}
+
+/* Buttons */
+
+.box button {
+  flex: 1;
+
+  height: 55px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background-color: #444;
+
+  color: white;
+
+  font-size: 20px;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+/* Hover */
+
+.box button:hover {
+  background-color: #666;
+
+  transform: scale(1.05);
+}
+
+/* Click */
+
+.box button:active {
+  transform: scale(0.95);
+}
+
+/* Operators */
+
+.box:nth-child(4) button {
+  background-color: #ff9500;
+}
+
+/* Equal button */
+
+.box:nth-child(4) button:last-child {
+  background-color: #28a745;
+}
+
+/* Clear */
+
+.box:last-child button:nth-child(2) {
+  background-color: #e74c3c;
+}
+
+/* Delete */
+
+.box:last-child button:nth-child(3) {
+  background-color: #555;
+}
