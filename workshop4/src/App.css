@@ -22,9 +22,16 @@ input[type="color"] {
 }
 
 button {
-  margin-top: 6%;
+  margin-top: 2%;
   font-size: 25px;
   padding: 10px 12px;
   cursor: pointer;
   border-radius: 8px;
+}
+
+.input {
+  outline: none;
+  padding: 6px 8px;
+  border-radius: 6px;
+  margin-top: 4%;
 }
